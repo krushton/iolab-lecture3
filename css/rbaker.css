@@ -6,32 +6,48 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-
+	font-family: 'Josefin Sans', sans-serif;
+	background: #f8f8f8;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
 /*    if you chose a dark color for the background, set the text color to a lighter color (ex. #fff for white) */
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
+	background: #777;
     overflow:auto;
+    padding: 12px;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
-a {
 
-}
+a.header:link {font-size: 12pt; text-decoration: none; color: #FFF;}
+a.header:visited {font-size: 12pt; text-decoration: underline; color: #f4f4f4;}
+a.header:hover {font-size: 12pt; text-decoration: underline; color: #78cdd1;}
+a.header:active {font-size: 12pt; text-decoration: underline; color: #32b6bd;}
+
+a:link {font-size: 12pt; text-decoration: none; color: #000;}
+a:visited {font-size: 12pt; text-decoration: underline; color: #f4f4f4;}
+a:hover {font-size: 12pt; text-decoration: underline; color: #78cdd1;}
+a:active {font-size: 12pt; text-decoration: underline; color: #32b6bd;}
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
 /* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
+	width: 1000px;
+	margin: 0px auto;
     overflow:auto;
+	border: 1px dotted #c0c0c0;
+	-moz-box-shadow: 4px 4px 2px #f4f4f4;
+	-webkit-box-shadow: 4px 4px 2px #f4f4f4;
+	box-shadow: 4px 4px 2px #f4f4f4;    
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-
+	padding: 12px;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
