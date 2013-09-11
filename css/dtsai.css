@@ -111,7 +111,7 @@ a:hover {
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
 	display: inline;
-	background: #ccc;
+	background: #ddd;
 }
 .tag:hover {
 	background: #fff;
