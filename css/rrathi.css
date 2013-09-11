@@ -4,29 +4,46 @@
 /*    ADVANCED: use a font from Google fonts: http://www.google.com/fonts/ */
 /* 2. set the page background to a color (ex. #eee for light gray) or to a background image */
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
-
+/*TODO - */
 body {
+	 margin:0;
+    padding:0;
+    background:#fff; /*TODO - change grey color*/
+    color:white;
+    font-size:100%;
+    font-family: 'Tangerine', serif;
 
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
 /*    if you chose a dark color for the background, set the text color to a lighter color (ex. #fff for white) */
 /*    ADVANCED: make the header stay fixed at the top of the page */
+/*Tip: http://www.w3schools.com/cssref/pr_class_position.asp*/
+
 header {
     overflow:auto;
+    background:#4E4D4D;
+    position: fixed;
+
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
-a {
 
+a {text-decoration: none;
+  }
+a:link, a:visited {
+    color:#ffc757;
 }
+a:hover {text-decoration:underline;}
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
 /* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
+    
+
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
