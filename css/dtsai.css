@@ -18,7 +18,11 @@ header {
     overflow:auto;
     background: #222;
     color: #fff;
+<<<<<<< HEAD
+    /*position: fixed;*/
+=======
     position: fixed;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
     width: 1000px;
 }
 
@@ -44,12 +48,20 @@ a:hover {
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
+<<<<<<< HEAD
+	margin: 10px 20px 10px 20px;
+=======
 	/*height: 1000px;*/
 	margin: 100px 20px 10px 20px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
+<<<<<<< HEAD
+#sidebar {    
+
+=======
 #sidebar {
 	width: 300px;
 	float: left;
@@ -57,34 +69,51 @@ a:hover {
 #main {
 	float: left;
 	width: 620px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
+<<<<<<< HEAD
+    padding:0px;
+=======
     list-style: none;
     padding: 0px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
+<<<<<<< HEAD
+
+=======
 	display: inline;
 	margin: 5px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
+<<<<<<< HEAD
+
+=======
 	color: #fff;
 	font-size: 1.2em;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
+<<<<<<< HEAD
+
+=======
 	color: #bbb;
 	font-weight: bold;
 	text-decoration: underline;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 
@@ -96,13 +125,21 @@ a:hover {
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
+<<<<<<< HEAD
+
+=======
 	float: left;
 	margin: 10px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 14. make all caption text italic */
 .caption {  
+<<<<<<< HEAD
+
+=======
 	font-style: italic;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
@@ -110,15 +147,34 @@ a:hover {
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
+<<<<<<< HEAD
+
+=======
 	display: inline;
 	background: #ddd;
 }
 .tag:hover {
 	background: #fff;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
+<<<<<<< HEAD
+
+}
+
+.tag.small {
+
+}
+
+.tag.medium {
+
+}
+
+.tag.large {
+
+=======
 	font-size: 1em;
 }
 
@@ -132,5 +188,6 @@ a:hover {
 
 .tag.large {
 	font-size: 2.4em;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
