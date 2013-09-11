@@ -6,137 +6,78 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-	background-color: #eee;
-<<<<<<< HEAD
-	font-family: Helvetica;
-=======
-	font-family: 'Open Sans', sans-serif, Helvetica;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    background:#eee;
+    color:#222;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
-/*    if you chose a dark color for the background, set the text color to a lighter color (ex. #fff for white) */
+/*    if you chose a dark color for the background, set the text color to a lighter color */
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
+    background:#222;
+    color:#fff;
+    padding:10px;
     overflow:auto;
-    background-color: #222;
-    color: #fff;
-<<<<<<< HEAD
-=======
-    padding: 10px;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
-/* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
+/* 4. specify the default text color for links (ex. #1FA1FA for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
 a {
-	color: #1fa1fa;
-	text-decoration: none;
+    color:#1FA1FA;
 }
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
 /* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
+    background:#fff;
+    width:1000px;
+    margin: 0 auto;
     overflow:auto;
-<<<<<<< HEAD
-=======
-    background-color: #fff;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 2px 2px 2px #aaa;
-<<<<<<< HEAD
-    border-style: solid;
-    border-width: 1px;
-    border-color: #aaa;   
-=======
-    border: solid 5px #ddd; 
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    box-shadow: 1px 1px 5px #999;
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
-#sidebar, #main {    
-<<<<<<< HEAD
-	margin-left: 20px;
-	margin-right: 20px;
-=======
-	padding-left: 20px;
-	padding-right: 20px;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+#sidebar,#main {    
+    padding:10px;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
 #sidebar {    
-	float: left;
-<<<<<<< HEAD
-	width: 160px;
+    float:left;
+    width:300px;
 }
 
 #main {
-	float: left;
-	width: 760px;
+    float:left;
+    width:660px;
 }
 
-=======
-	width: 220px;
-}
-#sidebar li a:hover {
-	color: #1671AF;
-} 
-
-#main {
-	float: left;
-	width: 700px;
-}
-
-
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
-/* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
+/* 8. the navigation links are in a list (<ul>). get rid of the bullet points and the left indent */
 #nav ul {
+    list-style-type:none;
     padding:0px;
-<<<<<<< HEAD
-=======
-    list-style-type: none;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
-<<<<<<< HEAD
-
-=======
-	display: inline;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    margin-right:10px;
+    float:left;
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
-<<<<<<< HEAD
-
-=======
-	color: #fff;
-	text-decoration: none;
-}
-#nav li a:hover {
-	color: #aaa;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+   color:#fff;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
-<<<<<<< HEAD
 #nav li a.selected {    
-
-=======
-#nav li a.selected {   
-	color: #aaa;
-	text-decoration: underline;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    text-decoration:none;
 }
 
 
@@ -148,76 +89,41 @@ a {
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
-<<<<<<< HEAD
-
-=======
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	border: solid 1px #ccc;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    float:left;
+    margin:10px 10px 0px 0px;
+    border: 1px solid #ddd;
 }
 
 /* 14. make all caption text italic */
 .caption {  
-<<<<<<< HEAD
-=======
-	font-style: italic;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
-
+    font-style:italic;
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
 /*     see: http://htmldog.com/reference/cssproperties/display/ */
 /* 16. give tags a background color */
-/*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
-<<<<<<< HEAD
+/*     ADVANCED: make the mouse cursor change on hover to indicate that these will be clickable */
 .tag {    
-
-=======
-.tag {
-	display: inline-block;
-	background-color: #ccc;
-	padding: 5px;
-	margin: 2px;
-	cursor: pointer;
-}
-
-.tag:hover {
-	background-color: #eee;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    background-color:#eee;
+    margin-top:5px;
+    padding:5px 10px;
+    display:inline-block;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-<<<<<<< HEAD
-
+    font-size:10px;   
 }
 
 .tag.small {
-
+    font-size:14px;
 }
 
 .tag.medium {
-
+    font-size:18px;
 }
 
 .tag.large {
-
-=======
-	font-size: 10px;
-}
-
-.tag.small {
-	font-size: 14px;
-}
-
-.tag.medium {
-	font-size: 18px;
-}
-
-.tag.large {
-	font-size: 22px;
->>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    font-size:22px;
 }
 
