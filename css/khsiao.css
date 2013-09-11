@@ -7,7 +7,7 @@
 
 body {
 	background-color: #eee;
-	font-family: Helvetica;
+	font-family: 'Open Sans', sans-serif, Helvetica;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -37,7 +37,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 2px #aaa;
-    border: solid 5px #ccc; 
+    border: solid 5px #ddd; 
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
@@ -52,6 +52,10 @@ a {
 	float: left;
 	width: 220px;
 }
+#sidebar li a:hover {
+	color: #1671AF;
+} 
+
 #main {
 	float: left;
 	width: 700px;
@@ -74,15 +78,17 @@ a {
 /*     ADVANCED: add a text shadow */
 #nav li a {
 	color: #fff;
-	text-decoration: underline;
-	text-decoration-color: #aaa; 
+	text-decoration: none;
+}
+#nav li a:hover {
+	color: #aaa;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {   
 	color: #aaa;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 
@@ -116,6 +122,10 @@ a {
 	padding: 5px;
 	margin: 2px;
 	cursor: pointer;
+}
+
+.tag:hover {
+	background-color: #eee;
 }
 
 /* 17. set the font size for each size of tag */
