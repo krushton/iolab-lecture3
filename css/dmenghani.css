@@ -35,22 +35,31 @@ color: #1fa1fa;
     overflow:auto;
     width: 1000px;
     margin: 20px;
-    box-shadow: gray;
     position: fixed;
     left: 10%;
-  
+	box-shadow: 10px 10px 5px #888888; 
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
 margin-left: 50px;
+
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
 #sidebar {    
 float: left;
+padding-right: 25px;
+width:200px;
 }
+
+#main {    
+margin-left: 50px;
+float: left;
+width: 600px;
+}
+
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
@@ -90,6 +99,7 @@ float: left;
 border-width: 1px;
 border-spacing: 1px;
 padding: 2px;
+
 }
 
 /* 14. make all caption text italic */
@@ -103,22 +113,25 @@ font-style: italic;
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
  display: block;
+ background-color: gray;
+ padding: 2px;
+ display: inline;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-
+font-size: 6px;
 }
 
 .tag.small {
-
+font-size: 8px;
 }
 
 .tag.medium {
-
+font-size: 15px;
 }
 
 .tag.large {
-
+font-size: 18px;
 }
 
