@@ -8,6 +8,7 @@
 body {
 	font-family: arial, sans-serif;
 	font-size: 14px;
+	line-height: 125%;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -26,7 +27,7 @@ a {
 	color: #1fa1fa;
 }
 a:hover{
-	text-decoration: none;
+
 }
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
@@ -41,13 +42,18 @@ a:hover{
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-	
+	padding: 10px;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
 #sidebar {    
 	float: left;
+	width: 250px;
+}
+#main {
+	float: left;
+	width: 700px;
 }
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
@@ -71,7 +77,7 @@ a:hover{
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
-
+	text-decoration: none;
 }
 
 
@@ -83,12 +89,14 @@ a:hover{
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
-
+	float: left;
+	border: 1px solid #BFBFBF;
+	margin: 10px;
 }
 
 /* 14. make all caption text italic */
 .caption {  
-
+	font-style:italic
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
@@ -96,23 +104,31 @@ a:hover{
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
-
+	display: inline;
+	background-color: #EEE;
+	padding: 5px 10px;
+}
+.tag:hover{
+	cursor: pointer;
+}
+#tagcloud{
+	line-height: 30px;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-
+	font-size: 8px;
 }
 
 .tag.small {
-
+	font-size: 10px;
 }
 
 .tag.medium {
-
+	font-size: 14px;
 }
 
 .tag.large {
-
+	font-size: 17px;
 }
 
