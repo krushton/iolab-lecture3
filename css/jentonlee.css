@@ -7,6 +7,12 @@
 
 body {
 
+	font-family: 'Gudea', sans-serif;
+	color: black;
+	font-size: 16px;
+	background-image:url(../images/bedge_grunge.png);}
+
+
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
