@@ -6,7 +6,9 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-
+	background: #eee;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .8em;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -14,12 +16,21 @@ body {
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
     overflow:auto;
+    background: #222;
+    color: #fff;
+    /*position: fixed;*/
+    width: 1000px;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
 a {
+	color: #1fa1fa;
+	text-decoration: none;
+}
 
+a:hover {
+	text-decoration: underline;
 }
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
@@ -27,11 +38,13 @@ a {
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
+    width: 1000px;
+    margin: 0px auto;
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-
+	margin: 10px 20px 10px 20px;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
