@@ -6,7 +6,8 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-
+	font-family: arial, sans-serif;
+	font-size: 14px;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -14,12 +15,18 @@ body {
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
     overflow:auto;
+	background-color: #222;
+	color: white;
+	padding: 10px;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
 a {
-
+	color: #1fa1fa;
+}
+a:hover{
+	text-decoration: none;
 }
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
@@ -27,34 +34,38 @@ a {
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
+	width: 1000px;
+	margin: 50px auto;
+	border: 8px solid #EEE;
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-
+	
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
 #sidebar {    
-
+	float: left;
 }
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
     padding:0px;
+	
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
-
+	display: inline;
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
-
+	color: white;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
