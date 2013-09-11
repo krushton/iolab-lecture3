@@ -1,0 +1,193 @@
+/* --------------------------------------- GENERAL STYLES --------------------------------------- */
+
+/* 1. define the text font, size, and color that will apply to the whole page  
+/*    ADVANCED: use a font from Google fonts: http://www.google.com/fonts/ */
+/* 2. set the page background to a color (ex. #eee for light gray) or to a background image */
+/*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
+
+body {
+	background: #eee;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .8em;
+}
+
+/* 3. set the background color of the header to another color (ex. #222 for dark gray) */
+/*    if you chose a dark color for the background, set the text color to a lighter color (ex. #fff for white) */
+/*    ADVANCED: make the header stay fixed at the top of the page */
+header {
+    overflow:auto;
+    background: #222;
+    color: #fff;
+<<<<<<< HEAD
+    /*position: fixed;*/
+=======
+    position: fixed;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+    width: 1000px;
+}
+
+/* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
+/*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
+a {
+	color: #1fa1fa;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*------------------------------------- LAYOUT -------------------------------------------------*/
+/* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
+/*    ADVANCED: give this div a slight shadow */
+#wrapper {
+    overflow:auto;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
+#sidebar, #main {    
+<<<<<<< HEAD
+	margin: 10px 20px 10px 20px;
+=======
+	/*height: 1000px;*/
+	margin: 100px 20px 10px 20px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/* 7. the sidebar should be on the side. make it appear to the left of the #main div */
+/*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
+<<<<<<< HEAD
+#sidebar {    
+
+=======
+#sidebar {
+	width: 300px;
+	float: left;
+}
+#main {
+	float: left;
+	width: 620px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/*------------------------------------- NAVIGATION -------------------------------------------------*/
+/* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
+#nav ul {
+<<<<<<< HEAD
+    padding:0px;
+=======
+    list-style: none;
+    padding: 0px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/* 9. make the #nav items display horizontally, not vertically */
+#nav li {
+<<<<<<< HEAD
+
+=======
+	display: inline;
+	margin: 5px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
+/*     ADVANCED: add a text shadow */
+#nav li a {
+<<<<<<< HEAD
+
+=======
+	color: #fff;
+	font-size: 1.2em;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/* 11. give the link for the current page a slightly different style to distinguish it */
+/*     you could add/remove underline, change the color... ? */
+#nav li a.selected {    
+<<<<<<< HEAD
+
+=======
+	color: #bbb;
+	font-weight: bold;
+	text-decoration: underline;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+
+/*------------------------------------- IMAGE GRID -------------------------------------------------*/
+/* 12. make the images display in a grid */
+/*     see http://stackoverflow.com/questions/2562737/what-ways-can-i-put-images-in-a-grid-like-format if you get stuck */
+
+/* 13. add a 1px border to the .image-wrapper divs */
+/*     ADVANCED: give the border rounded corners */
+
+.image-wrapper {    
+<<<<<<< HEAD
+
+=======
+	float: left;
+	margin: 10px;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/* 14. make all caption text italic */
+.caption {  
+<<<<<<< HEAD
+
+=======
+	font-style: italic;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
+/*     see: http://htmldog.com/reference/cssproperties/display/ */
+/* 16. give tags a background color */
+/*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
+.tag {    
+<<<<<<< HEAD
+
+=======
+	display: inline;
+	background: #ddd;
+}
+.tag:hover {
+	background: #fff;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+
+/* 17. set the font size for each size of tag */
+.tag.xsmall {
+<<<<<<< HEAD
+
+}
+
+.tag.small {
+
+}
+
+.tag.medium {
+
+}
+
+.tag.large {
+
+=======
+	font-size: 1em;
+}
+
+.tag.small {
+	font-size: 1.4em;
+}
+
+.tag.medium {
+	font-size: 1.8em;
+}
+
+.tag.large {
+	font-size: 2.4em;
+>>>>>>> 6dcf014448ac51062243987eb8f7d66cfd0e07de
+}
+

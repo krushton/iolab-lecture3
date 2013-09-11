@@ -1,0 +1,125 @@
+@import url(http://fonts.googleapis.com/css?family=Bubbler+One);
+/* --------------------------------------- GENERAL STYLES --------------------------------------- */
+/* 2. set the page background to a color (ex. #eee for light gray) or to a background image */
+/*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
+
+body {
+  font-family: 'Bubbler One', sans-serif;
+
+  /* CSS patterns from http://lea.verou.me/css3patterns */
+  background-color: #026873;
+  background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+  linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+  background-size: 13px, 29px, 37px, 53px;
+
+}
+
+header {
+    overflow:auto;
+    background-color: #123456;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 985px;
+    padding-left: 15px;
+}
+
+a {
+  color: #1fa1fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------- LAYOUT -------------------------------------------------*/
+#wrapper {
+    overflow:auto;
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px #ddd;
+    background-color: rgba(255,255,255,.75);
+}
+
+#sidebar, #main {    
+  margin: 0px 20px;
+  margin-top: 100px;    
+  float: left;
+}
+
+#sidebar {
+  width: 120px;
+}
+
+#main {
+  width: 800px;
+}
+
+/*------------------------------------- NAVIGATION -------------------------------------------------*/
+#nav ul {
+    padding: 0px;
+    list-style: none;
+}
+
+#nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+#nav li a {
+  color: #eee;
+  text-shadow: 0.1em 0.1em #fff;
+}
+
+#nav li a.selected {    
+  color: #4af;
+  text-decoration: overline underline;
+}
+
+
+/*------------------------------------- IMAGE GRID -------------------------------------------------*/
+#gallery div {
+  margin: 5px;
+  width: 200px;
+  float: left;
+}
+
+.image-wrapper {    
+  border-radius: 1px;
+  border: 1px solid #026873;
+}
+
+.caption {  
+  font-style: italic;
+}
+
+.tag {    
+  display: inline-block;
+  background-color: #eee;
+}
+
+.tag:hover {
+  background-color: #ccc;
+}
+
+/* 17. set the font size for each size of tag */
+.tag.xsmall {
+  font-size: 8px;
+}
+
+.tag.small {
+  font-size: 12px;
+}
+
+.tag.medium {
+  font-size: 16px;
+}
+
+.tag.large {
+  font-size: 20px;
+}
+
+
