@@ -18,7 +18,7 @@ header {
     overflow:auto;
     background: #222;
     color: #fff;
-    /*position: fixed;*/
+    position: fixed;
     width: 1000px;
 }
 
@@ -44,36 +44,47 @@ a:hover {
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-	margin: 10px 20px 10px 20px;
+	/*height: 1000px;*/
+	margin: 100px 20px 10px 20px;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
-#sidebar {    
-
+#sidebar {
+	width: 300px;
+	float: left;
+}
+#main {
+	float: left;
+	width: 620px;
 }
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
-    padding:0px;
+    list-style: none;
+    padding: 0px;
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
-
+	display: inline;
+	margin: 5px;
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
-
+	color: #fff;
+	font-size: 1.2em;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
-
+	color: #bbb;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 
@@ -85,12 +96,13 @@ a:hover {
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
-
+	float: left;
+	margin: 10px;
 }
 
 /* 14. make all caption text italic */
 .caption {  
-
+	font-style: italic;
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
@@ -98,23 +110,27 @@ a:hover {
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
-
+	display: inline;
+	background: #ddd;
+}
+.tag:hover {
+	background: #fff;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-
+	font-size: 1em;
 }
 
 .tag.small {
-
+	font-size: 1.4em;
 }
 
 .tag.medium {
-
+	font-size: 1.8em;
 }
 
 .tag.large {
-
+	font-size: 2.4em;
 }
 
