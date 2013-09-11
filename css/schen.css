@@ -6,7 +6,9 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-
+	font-family: Verdana;
+	font-size: 16px;
+	background-color: #eee;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
