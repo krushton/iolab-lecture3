@@ -6,10 +6,13 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-font-size: 12px;
-font-family:"Arial";
-color:black;
-background-image: url("C:\\Users\\Divyakumar\\Documents\\GitHub\\iolab-lecture3\\images\\sos.png");
+
+	font-family: 'Gudea', sans-serif;
+	color: black;
+	font-size: 14px;
+	background-image:url(../images/triangular.png);
+
+
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -17,15 +20,27 @@ background-image: url("C:\\Users\\Divyakumar\\Documents\\GitHub\\iolab-lecture3\
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
     overflow:auto;
-    background-color: #222;
-    color:#fff;
-    background-position: fixed;
+    background-color:#fff;
+    position:fixed;
+    width: 100%;
+    left: 0;
+        box-shadow: 5px 5px 5px #888888;
+
+}
+
+#brand {
+	margin-left:10px;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
 a {
-color: #1fa1fa;
+	color: #1fa1fa;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
@@ -33,57 +48,62 @@ color: #1fa1fa;
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
-    width: 1000px;
-    margin: 20px;
-    position: fixed;
-    left: 10%;
-	box-shadow: 10px 10px 5px #888888; 
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 5px 5px 5px #888888;
+
+}
+
+#content {
+	 margin-top:10%;
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-margin-left: 50px;
-
+	margin:5px;
+	padding:10px;
+	
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
 #sidebar {    
-float: left;
-padding-right: 25px;
-width:200px;
+	float:left;
+	width:130px;
+	margin-right:5px;
 }
-
-#main {    
-margin-left: 50px;
-float: left;
-width: 600px;
+#main {
+	float:left;
+	width:800px;
 }
-
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
     padding:0px;
-	list-style-type: none;
+    list-style-type: none;
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
-display: inline;
+   display:inline;
+   margin-left: 10px;
+   margin-right:10px;
+   font-size:16px;
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
 color:white;
+text-shadow: 2px 2px #A5A6B2;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
-color:white;
-text-decoration: none;
+
 }
 
 
@@ -95,16 +115,12 @@ text-decoration: none;
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
-float: left;
-border-width: 1px;
-border-spacing: 1px;
-padding: 2px;
 
 }
 
 /* 14. make all caption text italic */
 .caption {  
-font-style: italic;
+
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
@@ -112,26 +128,23 @@ font-style: italic;
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
- display: block;
- background-color: gray;
- padding: 2px;
- display: inline;
+
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-font-size: 6px;
+
 }
 
 .tag.small {
-font-size: 8px;
+
 }
 
 .tag.medium {
-font-size: 15px;
+
 }
 
 .tag.large {
-font-size: 18px;
+
 }
 
