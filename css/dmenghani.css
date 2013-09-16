@@ -6,7 +6,10 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-
+font-size: 12px;
+font-family:"Arial";
+color:black;
+background-image: url("C:\\Users\\Divyakumar\\Documents\\GitHub\\iolab-lecture3\\images\\sos.png");
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -14,12 +17,15 @@ body {
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
     overflow:auto;
+    background-color: #222;
+    color:#fff;
+    background-position: fixed;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
 a {
-
+color: #1fa1fa;
 }
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
@@ -27,40 +33,57 @@ a {
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
+    width: 1000px;
+    margin: 20px;
+    position: fixed;
+    left: 10%;
+	box-shadow: 10px 10px 5px #888888; 
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
+margin-left: 50px;
 
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
 #sidebar {    
-
+float: left;
+padding-right: 25px;
+width:200px;
 }
+
+#main {    
+margin-left: 50px;
+float: left;
+width: 600px;
+}
+
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
     padding:0px;
+	list-style-type: none;
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
-
+display: inline;
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
-
+color:white;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
-
+color:white;
+text-decoration: none;
 }
 
 
@@ -72,12 +95,16 @@ a {
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
+float: left;
+border-width: 1px;
+border-spacing: 1px;
+padding: 2px;
 
 }
 
 /* 14. make all caption text italic */
 .caption {  
-
+font-style: italic;
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
@@ -85,23 +112,26 @@ a {
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
-
+ display: block;
+ background-color: gray;
+ padding: 2px;
+ display: inline;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-
+font-size: 6px;
 }
 
 .tag.small {
-
+font-size: 8px;
 }
 
 .tag.medium {
-
+font-size: 15px;
 }
 
 .tag.large {
-
+font-size: 18px;
 }
 

@@ -6,61 +6,90 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-
-}
+	font-size: 1em;
+	color: black;
+	font-family: 'Montserrat Alternates', sans-serif;
+	background: url("../images/subtle_white_feathers.png") repeat scroll 0 0 transparent;
+	}
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
 /*    if you chose a dark color for the background, set the text color to a lighter color (ex. #fff for white) */
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
+	background-color: #222;
+	color: #eee;
+	position: relative;
+	width:100%;
     overflow:auto;
+    padding-left:1em;
+    padding-bottom:1em;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
 a {
-
+	color: #1fa1fa;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
 /* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
+	width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
     overflow:auto;
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-
+	padding-left: 1em;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
 #sidebar {    
-
+	float: left;
+	width: 180px;
+	height:800px;   /*   HACK : KEEPING THE MAIN DIV FROM ENCROACHING ON THE SPACE BELOW THE SIDEBAR */
 }
+/*#main div {
+	margin-left: 180px;
+}*/
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
     padding:0px;
+    list-style: none;
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
-
+	padding-right: .5em;
+	float: left;
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
-
+	color: #eee;
+	text-decoration: underline;
+	text-shadow: 1px 1px 2px blue, 0 0 1em blue, 0 0 0.2em white;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
+	text-decoration: none;
+}
 
+#sidebar ul {
+	margin-left:-1em;
 }
 
 
@@ -72,12 +101,16 @@ a {
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
-
+	float: left;
+	padding: 1em;
+	margin:  1em;
+	border: 1px solid #000;
+	border-radius: 1em;
 }
 
 /* 14. make all caption text italic */
 .caption {  
-
+	font-style: italic;
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
@@ -85,23 +118,25 @@ a {
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
-
+	cursor: pointer;
+	display: inline;
+	background-color: #ddd;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-
+	font-size: 8px;
 }
 
 .tag.small {
-
+	font-size: 10px;
 }
 
 .tag.medium {
-
+	font-size: 12px;
 }
 
 .tag.large {
-
+	font-size: 16px;
 }
 
