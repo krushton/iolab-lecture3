@@ -102,12 +102,15 @@ a:hover {
 
 .image-wrapper {    
 	float: left;
-	padding: 2em;
+	padding: 1em;
+	margin:  1em;
+	border: 1px solid #000;
+	border-radius: 1em;
 }
 
 /* 14. make all caption text italic */
 .caption {  
-
+	font-style: italic;
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
@@ -115,7 +118,9 @@ a:hover {
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
 .tag {    
-
+	cursor: pointer;
+	display: inline;
+	background-color: #ddd;
 }
 
 /* 17. set the font size for each size of tag */
