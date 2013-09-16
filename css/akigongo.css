@@ -6,6 +6,10 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
+	
+	background-color:#fff;
+	font-family: 'Arial', serif;
+    font-size: 14px;
 
 }
 
@@ -14,53 +18,77 @@ body {
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
     overflow:auto;
+	background-color:#333;
+	color:#fff
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
-a {
+/*a {
+	color:#1fa1fa;
+	
 
-}
+}*/
+a:link {color:#1fa1fa; text-decoration:none}    
+a:visited {color:#1fa1fa;}
+a:hover {color:#1fa1fa; text-decoration:underline} 
+a:active {color:#1fa1fa;}
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
 /* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
+/*margin-left: 15px;*/
+/*margin-right: 8px;*/
+padding:20px;
+
 
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
-#sidebar {    
-
+#sidebar {   
+	float : left; 
+	padding:20px;
+	height:800px;
+	overflow:hidden;
+	width:300px;
+	margin:0px;
 }
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
-    padding:0px;
+    padding:10px;
+	list-style-type: none;
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
+	display:inline;
 
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
-
+	color : #fff;
+	text-shadow:#cf3;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
-
+	color:#06F;
 }
 
 
@@ -71,12 +99,22 @@ a {
 /* 13. add a 1px border to the .image-wrapper divs */
 /*     ADVANCED: give the border rounded corners */
 
-.image-wrapper {    
+.image-wrapper {   
+	float : left;
+	padding-right:10px;
+	
+	
 
+}
+.image-wrapper div{
+	border:1px;
+	
 }
 
 /* 14. make all caption text italic */
-.caption {  
+.caption {
+	font-style:italic;
+	padding-bottom:10px;
 
 }
 
@@ -84,24 +122,31 @@ a {
 /*     see: http://htmldog.com/reference/cssproperties/display/ */
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
-.tag {    
-
+.tag { 
+	background-color:#cfc;
+    padding: 10px 10px 10px 10px;
+	display:inline-block;
+	
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
+	font-size:10px;
 
 }
 
 .tag.small {
+	font-size:12px;
 
 }
 
 .tag.medium {
+	font-size:14px;
 
 }
 
 .tag.large {
+	font-size:16px;
 
 }
 
