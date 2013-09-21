@@ -6,11 +6,11 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-	
-	background-color:#fff;
-	font-family: 'Arial', serif;
-    font-size: 14px;
-
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 14px;
+	line-height: 125%;
+	margin: 0px;
+	background-image: url(http://subtlepatterns.com/patterns/tree_bark.png);
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -18,77 +18,79 @@ body {
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
     overflow:auto;
-	background-color:#333;
-	color:#fff
+	background-color: #222;
+	color: white;
+	padding: 10px 10px 0px 10px;
+	position: fixed;
+	width: 980px;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
 /*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
-/*a {
-	color:#1fa1fa;
-	
+a {
+	color: #1fa1fa;
+}
+a:hover{
 
-}*/
-a:link {color:#1fa1fa; text-decoration:none}    
-a:visited {color:#1fa1fa;}
-a:hover {color:#1fa1fa; text-decoration:underline} 
-a:active {color:#1fa1fa;}
+}
 
 /*------------------------------------- LAYOUT -------------------------------------------------*/
 /* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
-	width:1000px;
-	margin-left:auto;
-	margin-right:auto;
-	
+	width: 1000px;
+	margin: auto;
+	border: 8px dashed gray;
+	border-top:none;
+	background-image: url(http://subtlepatterns.com/patterns/greyzz.png);
+}
+#content{
+	padding-top: 100px;
+}
+h1{
+	font-size: 40px;
+	text-align: center;
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
-/*margin-left: 15px;*/
-/*margin-right: 8px;*/
-padding:20px;
-
-
+	padding: 10px;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
-#sidebar {   
-	float : left; 
-	padding:20px;
-	height:800px;
-	overflow:hidden;
-	width:300px;
-	margin:0px;
+#sidebar {    
+	float: left;
+	width: 250px;
+}
+#main {
+	float: left;
+	width: 700px;
 }
 
 /*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
-    padding:10px;
-	list-style-type: none;
+    padding:0px;
+	text-align: center;
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
-	display:inline;
-
+	display: inline;
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
 #nav li a {
-	color : #fff;
-	text-shadow:#cf3;
+	color: white;
 }
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
-	color:#06F;
+	text-decoration: none;
 }
 
 
@@ -99,54 +101,47 @@ padding:20px;
 /* 13. add a 1px border to the .image-wrapper divs */
 /*     ADVANCED: give the border rounded corners */
 
-.image-wrapper {   
-	float : left;
-	padding-right:10px;
-	
-	
-
-}
-.image-wrapper div{
-	border:1px;
-	
+.image-wrapper {    
+	float: left;
+	border: 1px solid #BFBFBF;
+	margin: 10px;
 }
 
 /* 14. make all caption text italic */
-.caption {
-	font-style:italic;
-	padding-bottom:10px;
-
+.caption {  
+	font-style:italic
 }
 
 /* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
 /*     see: http://htmldog.com/reference/cssproperties/display/ */
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
-.tag { 
-	background-color:#cfc;
-    padding: 10px 10px 10px 10px;
-	display:inline-block;
-	
+.tag {    
+	display: inline;
+	background-color: #EEE;
+	padding: 5px 10px;
+}
+.tag:hover{
+	cursor: pointer;
+}
+#tagcloud{
+	line-height: 30px;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-	font-size:10px;
-
+	font-size: 8px;
 }
 
 .tag.small {
-	font-size:12px;
-
+	font-size: 10px;
 }
 
 .tag.medium {
-	font-size:14px;
-
+	font-size: 14px;
 }
 
 .tag.large {
-	font-size:16px;
-
+	font-size: 17px;
 }
 

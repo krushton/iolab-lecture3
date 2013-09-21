@@ -158,24 +158,33 @@ float: left;
 /*     see: http://htmldog.com/reference/cssproperties/display/ */
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
-.tag {    
+.tag {  
+display: inline;
+    background-color: #EEE;
+    padding: 0.5% 2%;  
 
+}
+.tag:hover{
+    cursor: pointer;
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-
+    font-size: 0.75em;
 }
 
 .tag.small {
+    font-size: 1em;
 
 }
 
 .tag.medium {
+    font-size: 1.25em;
 
 }
 
 .tag.large {
+    font-size: 1.5em;
 
 }
 

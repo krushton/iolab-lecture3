@@ -6,7 +6,7 @@
 /*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
 
 body {
-
+font-family: 'Noto Sans', sans-serif;
 }
 
 /* 3. set the background color of the header to another color (ex. #222 for dark gray) */
@@ -14,6 +14,7 @@ body {
 /*    ADVANCED: make the header stay fixed at the top of the page */
 header {
     overflow:auto;
+    height: 120px;
 }
 
 /* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
@@ -27,48 +28,108 @@ a {
 /*    ADVANCED: give this div a slight shadow */
 #wrapper {
     overflow:auto;
+    width: 700px ;
+    margin: 20px;
+	  margin-left: auto ;
+	  margin-right: auto ;
+  		border:7px solid #DDDDDD;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px
 }
 
 /* Added by dheera for setting width of brand*/
 #brand{
-	width: 500;
-	text-align:center;
+	width:inherit;
+	background-color: #000000;
+	height: 60px;
+}
+
+#heading{
+	width: inherit;
+	color: #FFFFFF;
 }
 
 /* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
 #sidebar, #main {    
+}
+#main{
+	width:450px;
+	float:left;
+	margin: 20px;
+	font-size: 8pt;
 
+}
+#main h4,p{
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* 7. the sidebar should be on the side. make it appear to the left of the #main div */
 /*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
-#sidebar {    
+#sidebar { 
+	padding-top: 20px;   
+	width:200px;
+	float:left;
+	font-size: 8pt;
+	position:relative;
+	left:10px;
+}
+
+#tagcloud{
+	position: absolute;
+	padding-top: 20px;
+	
+}
+/*------------------------------------- NAVIGATION -------------------------------------------------*/
+/* added by dheera*/
+#nav{
+	background-color: #000000;
+	color: #FFFFFF;
+	height: 60px;
+	position:relative;
 
 }
 
-/*------------------------------------- NAVIGATION -------------------------------------------------*/
 /* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
 #nav ul {
-    padding:0px;
+    
+    position:absolute;
+    bottom:10px;
+
+
+
 }
 
 /* 9. make the #nav items display horizontally, not vertically */
 #nav li {
+	display: inline; 
 
+}
+#sidebar ul{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	
 }
 
 /* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
 /*     ADVANCED: add a text shadow */
-#nav li a {
-
+#nav li a{
+	color: #FFFFFF;
 }
+
 
 /* 11. give the link for the current page a slightly different style to distinguish it */
 /*     you could add/remove underline, change the color... ? */
 #nav li a.selected {    
 
 }
-
+#headertable { 
+	background-color: #000000;
+}
 
 /*------------------------------------- IMAGE GRID -------------------------------------------------*/
 /* 12. make the images display in a grid */
@@ -78,11 +139,25 @@ a {
 /*     ADVANCED: give the border rounded corners */
 
 .image-wrapper {    
+ float: left;
+   
+border-radius: 8px;
+
+border:1px solid #DDDDDD;
+margin:0 5px 5px 0;
 
 }
 
+img{
+	width: 200px;
+	height: 150px;
+	margin:0 5px 5px 0;
+}
+
+
 /* 14. make all caption text italic */
 .caption {  
+
 
 }
 
@@ -90,24 +165,34 @@ a {
 /*     see: http://htmldog.com/reference/cssproperties/display/ */
 /* 16. give tags a background color */
 /*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
+
 .tag {    
+	/*display:inline;*/
+
+	background-color: #eee;
+	margin:0 5px 5px 0;
 
 }
 
 /* 17. set the font size for each size of tag */
 .tag.xsmall {
-
+display:inline-block;
+font-size: 10px;
 }
 
 .tag.small {
-
+display:inline-block;
+font-size: 13px;
 }
 
 .tag.medium {
-
+display:inline-block;
+font-size: 17px;
 }
 
 .tag.large {
-
+display:inline-block;
+font-size: 20px;
 }
+
 

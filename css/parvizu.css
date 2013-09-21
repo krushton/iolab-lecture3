@@ -1,107 +1,130 @@
-/* --------------------------------------- GENERAL STYLES --------------------------------------- */
+@charset "UTF-8";
+/* CSS Document */
 
-/* 1. define the text font, size, and color that will apply to the whole page  
-/*    ADVANCED: use a font from Google fonts: http://www.google.com/fonts/ */
-/* 2. set the page background to a color (ex. #eee for light gray) or to a background image */
-/*    if you go the latter route see http://subtlepatterns.com for some nice free background textures */
-
-body {
-
+body 
+{
+	background-color: #eee;
 }
 
-/* 3. set the background color of the header to another color (ex. #222 for dark gray) */
-/*    if you chose a dark color for the background, set the text color to a lighter color (ex. #fff for white) */
-/*    ADVANCED: make the header stay fixed at the top of the page */
-header {
-    overflow:auto;
+a
+{
+	color: #1fa1fa;
+	text-decoration: none;	
 }
 
-/* 4. specify the default text color for links (ex. #1fa1fa for a light blue) */
-/*    ADVANCED: remove the underline for normal links but make the link become underlined on hover */
-a {
-
+	
+#wrapper
+{
+	border-right: 0px;
+	vertical-align: top;
+	max-width:1000px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin: 10px;
+	background-color:#FFF;
+	box-shadow:#000;
+	
 }
 
-/*------------------------------------- LAYOUT -------------------------------------------------*/
-/* 5. set the width of this div to 1000px and make it centered in the middle of the page  */
-/*    ADVANCED: give this div a slight shadow */
-#wrapper {
-    overflow:auto;
+header
+{
+ 	background-color: #000;
+	color: #FFF;
+	padding: 10px;
 }
 
-/* 6. the content in these divs is flush against the edge, which makes the page crowded. add some extra space */
-#sidebar, #main {    
-
+header a
+{
+	color:#FFF;	
 }
 
-/* 7. the sidebar should be on the side. make it appear to the left of the #main div */
-/*    if you are not sure how to proceed, see: http://css-tricks.com/all-about-floats/ */
-#sidebar {    
-
+a.selected
+{
+	text-decoration:none;
 }
 
-/*------------------------------------- NAVIGATION -------------------------------------------------*/
-/* 8. the navigation links are in a list (<ul>). get rid of the bullet points */
-#nav ul {
-    padding:0px;
+a:hover
+{
+	text-decoration:underline;	
 }
 
-/* 9. make the #nav items display horizontally, not vertically */
-#nav li {
-
+header ul
+{
+	list-style-type: none;	
+	margin:0px;
+	padding:0px;
 }
 
-/* 10. define how the links in the nav should look. in our example, we changed the text color to white. */
-/*     ADVANCED: add a text shadow */
-#nav li a {
-
-}
-
-/* 11. give the link for the current page a slightly different style to distinguish it */
-/*     you could add/remove underline, change the color... ? */
-#nav li a.selected {    
-
+#nav ul li 
+{
+	display: inline-block;	
+	margin-right:5px;
 }
 
 
-/*------------------------------------- IMAGE GRID -------------------------------------------------*/
-/* 12. make the images display in a grid */
-/*     see http://stackoverflow.com/questions/2562737/what-ways-can-i-put-images-in-a-grid-like-format if you get stuck */
-
-/* 13. add a 1px border to the .image-wrapper divs */
-/*     ADVANCED: give the border rounded corners */
-
-.image-wrapper {    
-
+#content
+{
+	padding: 10px;	
+	
 }
 
-/* 14. make all caption text italic */
-.caption {  
-
+h3
+{
+	font-size:16px;	
 }
 
-/* 15. by default, a <div> takes up the width of its parent (display:block). Change the "display" property to override this behavior */
-/*     see: http://htmldog.com/reference/cssproperties/display/ */
-/* 16. give tags a background color */
-/*     ADVANCED: make the mouse cursor change on hover to indicate that these are clickable (hover over an <a> tag to see the desired effect) */
-.tag {    
-
+#sidebar, #main
+{
+	display: inline-block;	
+	vertical-align:top;
+	padding: 5px;
+	font-size: 13px;
 }
 
-/* 17. set the font size for each size of tag */
-.tag.xsmall {
-
+#sidebar
+{
+	width: 250px;	
 }
 
-.tag.small {
-
+#main
+{
+	width: 650px;	
 }
 
-.tag.medium {
 
+.tag
+{
+	background-color:#DDD;
+	display:inline-block;
+	padding:5px;	
+	margin:1px;
 }
 
-.tag.large {
-
+.small
+{
+	font-size:10px;
 }
 
+
+.xsmall
+{
+	font-size:12px;
+}
+
+
+.medium
+{
+	font-size:16px;
+}
+
+.large
+{
+	font-size:18px;
+}
+
+.image-wrapper
+{
+	display: inline-block;
+	margin: 5px;
+	border:1px;
+	border-radius:5px;	
+}
